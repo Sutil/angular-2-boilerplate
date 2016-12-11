@@ -5,4 +5,14 @@
         <p>Resultado de 1 + 1 é {{ 1 + 1 }}</p>
         <p>Resultado de 1 + 1 não é {{ 1 + 1 + getValor()}}</p>
     </article>
+
+    <article>
+        <h3>property-binding</h3>
+        <img src="{{ urlImg }}" />
+
+        <h4>Forma mais recomendada</h4>
+        <img [src]="urlImg" />
+        
+        <img bind-src="urlImg" />
+    </article>
 </section>
