@@ -18,7 +18,7 @@ import { CursosService } from './cursos.service';
 })
 export class CursosComponent {
     nomePortal = 'loiane.training';
-    cursos;
+    cursos : any;
 
     constructor(cursoService: CursosService) {
         this.cursos = cursoService.getCursos();
